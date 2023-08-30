@@ -5,10 +5,9 @@ import Form from 'react-bootstrap/Form';
 import { Container, Row, Col, } from 'react-bootstrap';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import DashHeader from "../../components/DashHeader";
 import { useState } from "react";
 import { signup } from "../../actions/user.actions";
-
+import Layout from '../../components/Layout';
 const Signup = (props) => {
     
     const [firstName,setFirtsName]=useState('')
@@ -42,8 +41,8 @@ const Signup = (props) => {
 
 
     return (
-        <div>
-            <DashHeader/>
+       
+            <Layout>
         
         <Container>
             {user.message}
@@ -96,7 +95,7 @@ const Signup = (props) => {
                 </Col>
             </Row>
         </Container>
-        </div>
+        </Layout>
     );
 
 }

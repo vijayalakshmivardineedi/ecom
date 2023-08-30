@@ -6,7 +6,8 @@ import {/*isUserLoggedIn,*/ login} from '../../actions';
 import {useDispatch, useSelector} from 'react-redux';
 import { /* useEffect,*/ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import DashHeader from '../../components/DashHeader';
+
+import Layout from '../../components/Layout';
 
 
 
@@ -42,8 +43,8 @@ const Signin = (props) => {
 	}
 
 	return (
-		<div>
-		<DashHeader/>
+		
+		<Layout>
 		<Container>
 			
 			<Row style={{ marginTop: "50px" }}>
@@ -74,7 +75,7 @@ const Signin = (props) => {
 			</Row>
 
 		</Container>
-		</div>
+		</Layout>
 	);
 
 }

@@ -1,4 +1,4 @@
-import { authConstants, userConstants } from "../actions/constants"
+import { authConstants,  } from "../actions/constants"
 
 const initState={
     token:null,
@@ -37,7 +37,7 @@ export default (state  = initState,action)=>{
             break;
         case authConstants.LOGOUT_REQUEST:
             state={
-                ...initState,
+                ...state,
                 loading:true
             }
             break;

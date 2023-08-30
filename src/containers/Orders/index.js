@@ -2,14 +2,14 @@
 import React from "react";
 import Layout from "../../components/Layout";
 
-const Products=(props)=>{
+const Orders=(props)=>{
     return (
         <Layout sidebar>
-             <h1>Product</h1>
+             <h1>Orders</h1>
         </Layout>
    
         
         
     )
 }
-export default Products;
+export default Orders;

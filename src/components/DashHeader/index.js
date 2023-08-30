@@ -5,11 +5,12 @@ import './index.css';
 import { signout } from "../../actions/auth.actions";
 
 const DashHeader = (props) => {
+   
      const auth=useSelector(state=>state.auth)
      const dispatch=useDispatch()
      
      const logOut=()=>{
-        dispatch(signout())
+        dispatch(signout());
      }
 
      
@@ -18,7 +19,7 @@ const DashHeader = (props) => {
         return (
             <Nav>
                     <li className="nav-item">
-                            <span className="nav-link" onClick={logOut}>Sign Out</span> 
+                            <span className="nav-link" onClick={logOut}>SignOut</span> 
                             </li>
                            </Nav>
         )
